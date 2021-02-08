@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraJS</title>
+
+    <!-- Styles-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- JavaScript-->
+    <script src="./js/scrpt.js"></script>
+</head>
+<body>
+    <section class="calculator-section">
+        <header>
+            <h1> Calculadora </h1>
+        </header>
+
+        <!-- Calculadora -->
+        <div class="calculator-container">
+            <div class="calculator-body">
+                <table>
+
+                    <!--Screen 0-->
+                    <tr>
+                        <td class="screen" colspan="4" id="result">0</td>
+                    </tr>
+
+                    <!--Screen Empty-->
+                    <tr>
+                        <td class="empty" colspan="4"></td>
+                    </tr>                   
+                    
+                    <!--Calculator Buttons-->
+                    <tr>
+                        <td><button class="normal-button" onclick="add('7')">7</button></td>
+                        <td><button class="normal-button" onclick="add('8')">8</button></td>
+                        <td><button class="normal-button" onclick="add('9')">9</button></td>
+                        <td><button class="normal-button" onclick="add('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="normal-button" onclick="add('4')">4</button></td>
+                        <td><button class="normal-button" onclick="add('5')">5</button></td>
+                        <td><button class="normal-button" onclick="add('6')">6</button></td>
+                        <td><button class="normal-button" onclick="add('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="normal-button" onclick="add('1')">1</button></td>
+                        <td><button class="normal-button" onclick="add('2')">2</button></td>
+                        <td><button class="normal-button" onclick="add('3')">3</button></td>
+                        <td><button class="normal-button" onclick="add('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button class="normal-button" onclick="add('0')">0</button></td>
+                        <td><button class="normal-button" onclick="add('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="clean-button" onclick="clean()">Clean</button></td>
+                        <td><button class="normal-button" onclick="add('.')">.</button></td>
+                        <td><button class="normal-button" onclick="calculate()">=</button></td>
+                    </tr>
+                </table>
+                
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
