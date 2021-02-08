@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-Bate/Blog</title>
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="icon" href="./styles/images/Logo.svg">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <div class="container">
+        <nav>
+        <!--Logo-->
+         <div class="nav-logo-container">
+            <a href="#Menú">
+                <img class="nav-logo" src="./styles/images/logo-facebook_Mesa de trabajo 1.png" alt="Logo principal">
+            </a>
+        </div>      
+            <!--Unorderer list-->
+            <ul class="nav-link">
+            <!--List-->
+                <li><a href="blog.html">Blog</a></li>
+                <br>
+                <li><a href="./index.html">Contacto</a></li>
+                <br>
+                <li><a href="#Opción C">Opción C</a></li>
+                <br>
+                <li><a href="#Opción D">Opción D</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--Fin Barra de navegación-->
+    <section class="blog">
+        <header>
+            <h1>¡Sé parte de nuestro Blog!</h1>
+        </header>
+        <br>
+        <p class="paragraph">
+            En este espacio podrás adjuntar tu artículo para que sea revisado por el equipo de De-Bate. Si es aprobado, nos contactaremos contigo para coordinar el proceso de publicación correspondiente.
+        </p>
+
+        <div class="body-container">
+            <div class="form-container">
+                <form action="">
+                    <input type="text" placeholder="Nombre" id="name" required minlength="3">
+                    <input type="text" placeholder="Apellidos" id="lastName" required minlength="3">
+                    <input type="text" placeholder="Número de documento" id="documentID" required minlength="5">
+                    <input type="text" placeholder="Nombre del blog" id="blogName" required minlength="1">
+                    <input type="date" placeholder="Fecha de creación" id="blogDate" required minlength="1">
+                    <input type="file" placeholder="Adjuntar documento formato PDF">      
+                </form>
+                <button class="button-form" type="submit" onclick="verifySpaces()">Enviar</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
