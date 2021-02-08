@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head hace importaciones fuera de este html-->
+<head>
+    <!--Html meta-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Títulos-->
+    <title>De-Bate</title>
+
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <!--Ícono página-->
+    <link rel="icon" type=imgage/png  href="./styles/images/logo-facebook_Mesa de trabajo 1.png">
+</head>
+
+<body>      
+    <!--Barra de navegación-->
+    <div class="container">
+        <nav>
+        <!--Logo-->
+         <div class="nav-logo-container">
+            <a href="#Menú">
+                <img class="nav-logo" src="./styles/images/logo-facebook_Mesa de trabajo 1.png" alt="Logo principal">
+            </a>
+        </div>      
+            <!--Unorderer list-->
+            <ul class="nav-link">
+            <!--List-->
+                <li><a href="#blog">Blog</a></li>
+                <br>
+                <li><a href="#contact">Contacto</a></li>
+                <br>
+                <li><a href="#Opción C">Opción C</a></li>
+                <br>
+                <li><a href="#Opción D">Opción D</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--Form section-->
+    <section class="form-section">
+        <div class="form-container">
+            <div class="header1">
+                <h1>¿Quieres saber más de De-Bate, proponer un evento o realizar un comentario?</h1>
+            </div>
+            <br>
+            <p class="phrase">Por favor envíanos los siguientes datos para ponernos en contacto contigo:</p>
+            <br>
+                <div class="form-inputs">
+
+                    <!--Names flex container-->
+                    <div class="names-container">
+                        <label for="first-name" class="form-label">Nombres</label>
+                        <input type="text" class= "form-input" id="first-name" placeholder="Nombres">
+                    </div>
+                    <div class="names-container">
+                        <label for="last-name" class="form-label">Apellidos</label>
+                        <input type="text" class= "form-input" id="last-name" placeholder="Apellidos">
+                    </div>
+
+                    <!--Data flex container-->
+                    <div class="data-container">
+                        <label for="phone" class="form-label">Teléfono</label>
+                        <input type="tel" class= "form-input" id="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="data-container">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="text" class= "form-input" id="E-mail" placeholder="Correo electrónico">
+                    </div>
+                    <div class="data-container">
+                        <label for="profession/office" class="form-label">Profesión/oficio</label>
+                        <input type="text" class= "form-input" id="profession/office" placeholder="Profesión/oficio">
+                    </div>
+                    
+                    <!--Description flex container-->
+                      
+                    <div class="description-container">
+                        <label for="description" class="form-label">Descripción</label>
+                        <textarea placeholder="Descipción" class= "form-input" name="description" id= "desciption" rows="3"></textarea>
+                    </div>
+
+                    <!--Buttons container-->
+                    <div class="buttons-container">
+                        <a href="#cancel" class="cancel-button">Cancelar</a>
+                        <a href="#send" class="send-button">Enviar</a>
+                    </div>   
+                </div>
+        </div>
+    </section>
+    <!--Main ends-->
+<footer class="footer-section">   
+    Patrocinado por <a href="http://what.ecclesia.is"> Ecclesia.is</a>
+</footer>
+</body>
+</html>
