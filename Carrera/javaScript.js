@@ -1,16 +1,11 @@
+let timeOne = parseInt(document.getElementById('timeOne').value, 10)
 
-function running () {
-    if (timeOne)
-    let timeOne = document.getElementById('personOne-time').value 
-    parseInt (timeOne, 10)
-    let timeTwo = document.getElementById('personTwo-time').value   
-    parseInt (timeTwo, 10)   
+let timeTwo = parseInt(document.getElementById('timeTwo').value, 10)
+
+function running() {
+    
     if (timeOne > timeTwo) {
-        alert("sdfasf")
+        swal(timeOne)
     }
+        
 }
-
-
-
-
-
