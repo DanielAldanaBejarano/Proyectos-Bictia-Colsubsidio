@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Carrera</title>
+  </head>
+  <body>
+      <div class="d-flex justify-content-center row">
+        <h1 class="text-center">Carrera</h1>
+
+        <div class="shadow-lg bg-body rounded row w-50 m-3 p-5 justify-content-center" id="first-container">
+            <h1 class="text-center"> Corredor 1 </h1>
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="text" id="personOne-name" placeholder="Nombre">
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="number" id="personOne-age" placeholder="Edad">
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="number" id="personOne-time" placeholder="Tiempo de 1/4 de Milla">
+        </div>
+        <div class="shadow-lg bg-body rounded text-center row w-50 m-3 p-5 justify-content-center" id="second-container">
+            <h1> Corredor 2 </h1>
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="text" id="second-name" placeholder="Nombre">
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="number" id="second-age" placeholder="Edad">
+            <input class="shadow-sm m-1 p-1 bg-body rounded text-center col-6" type="number" id="second-time" placeholder="Tiempo de 1/4 de Milla">
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-success" id="runBtn" onclick="running ()">
+                ¡Correr!
+            </button>
+        </div>
+        
+      </div>
+    
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  
+    <script src="javaScript.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
