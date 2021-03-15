@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Bar Stoa Café</title>
+  </head>
+  <body>
+      <header class="mt-3 text-center">
+        <h1>Bar Stoa Café</h1>  
+      </header>
+      <div class="d-flex flex-column shadow p-3 m-5 bg-white rounded text-center justify-content-center">
+        <h2>Formulario de ingreso</h2>
+        <br>
+        <p>Buenas noches estimado cliente. Por favor, diligencia los siguientes datos para poder ingresar:</p>
+        
+        <div class="d-flex row m-2 justify-content-center">
+
+            <div class="row m-1">
+                <label class="col-2 m-1" for="ID"> Número de identificación </label>
+                <input class="col-8 m-1" type="number" name="id" id="id"><br>
+            </div>
+            
+            <div class="row m-1">
+                <label class="col-2 m-1" for="nombres"> Nombres </label>
+                <input class="col-8 m-1" type="text" name="nombres" id="nombres"><br>
+            </div>
+            
+            <div class="row m-1">
+                <label class="col-2 m-1" for="apellidos"> Apellidos </label>
+                <input class="col-8 m-1" type="text" name="apellidos" id="apellidos"><br>
+            </div>
+            <div class="row m-1">
+                <label class="col-2 m-1" for="edad"> Edad </label>
+                <input class="col-8 m-1" type="number" name="edad" id="edad"><br>
+            </div>
+            <div class="row m-1">
+                <label class="col-2 m-1" for="sexo"> Sexo </label>                
+                <select class="col-8 m-1" id="sexo">
+                    <option selected>Seleccione uno por favor...</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                    <option value="3">Otro</option>
+                </select><br>                
+            </div>
+            <div class="row m-1">
+                <label class="col-2 m-1" for="e-mail"> E-mail </label>
+                <input class="col-8 m-1" type="email" name="e-mail" id="e-mail"><br>
+            </div>
+            <div class="row m-1">
+                <label class="col-2 m-1" for="telefono"> Teléfono </label>
+                <input class="col-8 m-1" type="number" name="telefono" id="telefono"><br>
+            </div>
+            <div class="row m-1">
+                <label class="col-2 m-1" for="acompañantes"> Acompañantes </label>
+                <input class="col-8 m-1" type="number" name="acompañantes" id="acompañantes"><br>
+            </div>
+            <div class="d-flex flex-row align-items-center form-check form-switch">
+                <label class="p-1 m-1 form-check-label" for="ladysNight"> ¿Ladys Night? </label>
+                <input class="p-1 m-5 form-check-input" type="checkbox" name="ladysNight" id="ladysNight"><br>
+            </div>
+        </div>
+        <button class="btn btn-success col justify-content-center m-3" onclick="reservePlace()">
+            Reservar
+        </button>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+    <script src="./JavaScript/javaScript.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
